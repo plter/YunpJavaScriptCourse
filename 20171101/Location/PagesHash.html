@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <style>
+
+        body {
+            margin: 0;
+        }
+
+        .page {
+            display: none;
+            height: 200px;
+            color: white;
+            width: 100%;
+            position: absolute;
+        }
+
+        #page1 {
+            background-color: blue;
+        }
+
+        #page2 {
+            background-color: red;
+        }
+
+        #page3 {
+            background-color: green;
+        }
+    </style>
+
+</head>
+<body>
+<div>
+    <a href="PagesHash.html#page1">pages.html#page1</a>
+    <a href="PagesHash.html#page2">pages.html#page2</a>
+    <a href="PagesHash.html#page3">pages.html#page3</a>
+</div>
+
+<div class="page" id="page1">
+    Page1
+</div>
+<div class="page" id="page2">
+    Page2
+</div>
+<div class="page" id="page3">
+    Page3
+</div>
+
+<script src="PagesHash.js"></script>
+</body>
+</html>
