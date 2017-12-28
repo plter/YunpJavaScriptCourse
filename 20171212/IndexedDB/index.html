@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .table {
+            border: 1px solid blue;
+            margin: 5px;
+        }
+
+        .table-header {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <div class="table">
+        <div class="table-header">meta</div>
+        <form id="meta-form">
+            <label>
+                Key:
+                <input name="key" type="text" required>
+            </label>
+            <label>
+                Value:
+                <input name="value" type="text" required>
+            </label>
+            <input type="submit">
+        </form>
+        <div id="meta-container"></div>
+    </div>
+
+    <div class="table">
+        <div class="table-header">user</div>
+        <form id="user-form">
+            <label>
+                Name:
+                <input type="text" name="name" required>
+            </label>
+            <label>
+                Age:
+                <input type="number" name="age" required>
+            </label>
+            <input type="submit" value="Add">
+        </form>
+        <div id="users-container"></div>
+    </div>
+</div>
+
+<div>
+    <ol reversed id="log"></ol>
+</div>
+
+<script src="MetaTableRow.js"></script>
+<script src="MetaTable.js"></script>
+<script src="UserTableRow.js"></script>
+<script src="UserTable.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/upload" enctype="multipart/form-data" method="post">
+    <table>
+        <tbody>
+        <tr>
+            <td>文本文件</td>
+            <td><input type="file" required name="text_file"></td>
+        </tr>
+        <tr>
+            <td>图片</td>
+            <td><input type="file" required name="image_file"></td>
+        </tr>
+        <tr>
+            <td>名字</td>
+            <td><input type="text" required name="name"></td>
+        </tr>
+        </tbody>
+    </table>
+    <input type="submit">
+</form>
+</body>
+</html>
