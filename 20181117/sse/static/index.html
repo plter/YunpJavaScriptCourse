@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SSE</title>
+</head>
+<body>
+<script>
+
+    (function () {
+        let es = new EventSource("/sse");
+        // es.onmessage = function (evt) {
+        //     console.log(evt);
+        // }
+        // es.addEventListener("message", function (e) {
+        //     console.log(e);
+        // })
+        // es.addEventListener("count",function (e) {
+        //     console.log(e);
+        // });
+        es.addEventListener("progress", function (e) {
+            console.log(e.data + "%");
+        });
+        es.addEventListener("complete", function (e) {
+            es.close();
+            console.log(e);
+        });
+    })();
+
+</script>
+</body>
+</html>
