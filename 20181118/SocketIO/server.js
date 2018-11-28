@@ -21,4 +21,7 @@ io.on('connection', function (socket) {
     socket.on('chat', function (data) {
         io.emit('chat', data);
     });
+    socket.on("disconnect", reason => {
+        console.log(reason);
+    });
 });
