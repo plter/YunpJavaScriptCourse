@@ -1,0 +1,7 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "dependencies": {
+    "yunpnodeserver": "0.0.4"
+  }
+}
