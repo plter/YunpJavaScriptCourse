@@ -1,0 +1,13 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-stream": "^5.2.1"
+  }
+}
