@@ -1,0 +1,9 @@
+{
+  "name": "closure",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "google-closure-compiler": "^20181210.0.0",
+    "gulp": "^4.0.0"
+  }
+}
