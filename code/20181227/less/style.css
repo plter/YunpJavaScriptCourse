@@ -1,0 +1,7 @@
+.parent {
+  color: blue;
+}
+.parent .child {
+  color: yellow;
+}
+/*# sourceMappingURL=style.css.map */
