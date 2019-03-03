@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    div
+        form(method="post", enctype="multipart/form-data")
+            input(type="text", name="name", required)
+            input(type="number", name="age", required)
+            input(type="file", name="upfile")
+            input(type="submit")
+    div Result: name=#{args.name}, age=#{args.age}
+    div 上传图片
+        form(method="post", enctype="multipart/form-data", action="/form/upload_img")
+            input(type="file", name="upfile", required)
+            input(type="submit")

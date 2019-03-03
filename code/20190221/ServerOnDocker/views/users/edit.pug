@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+    div
+        a(href="/users/list") 回到列表
+
+    form(method="post", action="/users/edit")
+        input(name="uid", value=user.id, type="hidden")
+        div
+            span 名字
+            input(type="text", value=user.username, name="username")
+        div
+            span 年龄
+            input(type="number", value=user.userage, name="userage")
+        div
+            input(type="submit", value="保存")

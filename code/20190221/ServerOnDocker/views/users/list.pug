@@ -1,0 +1,21 @@
+extends ../layout
+
+block content
+    div
+        a(href="/users/edit/0") 添加用户
+    table
+        thead
+            tr
+                th id
+                th name
+                th age
+                th 操作
+        tbody
+            each u in users
+                tr
+                    td=u.id
+                    td=u.username
+                    td=u.userage
+                    td
+                        a(href=`/users/edit/${u.id}`) 编辑
+                        a(href=`/users/delete/${u.id}`) 删除
