@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .currentA{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            /*将当前元素修改为块元素*/
+            display: block;
+        }
+
+        .currentH1{
+            display: inline;
+        }
+        .currentP{
+            display: inline;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--
+    内联元素:
+        a img
+-->
+<a href="#" class="currentA">内联元素A</a>
+<img src="demo.jpg" alt="">
+
+<!--
+    块元素：
+        h1  p
+-->
+
+<h1 class="currentH1">我是h1标签，我要单独占一行</h1>
+<p class="currentP">我是p标签，我也要单独占一行</p>
+
+</body>
+</html>

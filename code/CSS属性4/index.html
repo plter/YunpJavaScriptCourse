@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .testdisplay{
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+
+        .divdisplay{
+            /*display: inline-block;*/
+            width: 100px;
+            height: 100px;
+            background: blue;
+        }
+
+        .testfloat{
+            float: right;
+            width: 80px;
+            height: 80px;
+            background: green;
+        }
+
+        /*
+            在当前添加浮动的元素的父级上添加一个清除浮动的属性
+        */
+        .ulfloat{
+            clear: both;
+            overflow: hidden;
+        }
+
+        .ulfloat li{
+            float: left;
+            list-style: none;
+            margin: 10px;
+        }
+
+        .show{
+            visibility: hidden;
+            /*display: none;*/
+        }
+
+        .testoverflow{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            overflow: scroll;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--
+    1.display
+    2.float：浮动
+-->
+
+<a href="#" class="testdisplay">这是一个文本</a>
+<div class="divdisplay">
+    我是一个div元素
+</div>
+
+<div class="testfloat">
+    测试合适一个添加了浮动的元素
+</div>
+
+<ul class="ulfloat">
+    <li><a href="#">首页</a></li>
+    <li><a href="#">新闻</a></li>
+    <li><a href="#">电影</a></li>
+</ul>
+
+<p>哈哈</p>
+<p>嘿嘿</p>
+
+<div class="show">
+    我是一个猴子
+</div>
+
+<!--
+    如果display属性设置为none当前元素也是不可以见得
+    那么，display:none与visibility: hidden;的区别
+    display:none:不可见时，元素不占位
+    visibility: hidden:不可见时，元素依然站位
+-->
+
+<p>看完在哪里，要注意看位置</p>
+
+<div class="testoverflow">
+    如果display属性设置为none当前元素也是不可以见得
+    那么，display:none与visibility: hidden;的区别
+    display:none:不可见时，元素不占位
+    visibility: hidden:不可见时，元素依然站位
+</div>
+
+</body>
+</html>

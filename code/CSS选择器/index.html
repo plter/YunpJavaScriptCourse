@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        /*
+            css样式
+        */
+
+        .ptext{
+            color:#ff0000;
+            font-size: 20px;
+        }
+
+        #pid{
+            color:#ff00ff;
+            font-size: 25px;
+        }
+
+        span{
+            color: #ffff00;
+            font-size: 30px;
+        }
+
+        /* 通用选择器一般用来做初始化效果 */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* >：代表子元素 */
+        div>span{
+            color: #000;
+        }
+
+        div>p>span{
+            color: #ff00ff;
+        }
+        
+    </style>
+</head>
+<body>
+
+<!--
+    1.样式如何引用
+        1.外部链接：link
+            <link rel="stylesheet" href="css/index.css">
+        2.style
+            <style>
+                /*
+                    css样式
+                */
+            </style>
+        3.行内样式
+            <p style="color:red">哈哈</p>
+    2.选择器：
+        1.类选择器
+        2.id选择器
+        3.元素选择器
+        4.通用选择器
+    3.注意点：
+        1.类选择器可以重复
+        2.id选择器不可以重复（唯一的）
+    4.简单的元素嵌套
+        1.通过层级关系区分
+
+-->
+
+<p class="ptext">我是类选择器效果</p>
+<p class="ptext">重复的类选择器效果</p>
+<p id="pid">我是id选择器</p>
+<div>
+    <span>我是元素选择器</span>
+</div>
+
+<div>
+    <p>
+        <span>单层嵌套的span标签</span>
+    </p>
+</div>
+
+</body>
+</html>

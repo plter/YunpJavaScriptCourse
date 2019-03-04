@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h1{
+            clear: both;
+            padding: 0;
+            margin: 0;
+        }
+
+        .test{
+            width: 700px;
+            list-style: none;
+        }
+
+        .test li{
+            float: left;
+            margin: 20px 30px 0 0;
+            border: 1px solid #000;
+        }
+        .test li p{
+            width: 300px;
+            height: 100px;
+            background: #ddd;
+        }
+
+        .test .matrix{
+            transform: matrix(0,1,1,1,10,10);
+            -webkit-transform: matrix(0,1,1,1,10,10);
+            -ms-transform:matrix(0,1,1,1,10,10);
+            -moz-transform: matrix(0,1,1,1,10,10);
+        }
+
+        .test .translate p{
+            transform: translate(5%,10px);
+        }
+
+        .test .translate2 p{
+            transform: translate(-10px,-10px);
+        }
+
+        .test .translateX p{
+            transform: translate(20px);
+        }
+
+        .test .translate3 p{
+            transform: translate(20px);
+        }
+
+        .test .translateY p{
+            transform: translateY(10px);
+        }
+
+        .test .translate4 p{
+            transform: translate(0,10px);
+        }
+
+        .test .rotate p{
+            transform: rotate(-15deg);
+        }
+
+        .test .rotate2 p{
+            transform: rotate(15deg);
+        }
+
+        .test .scale p{
+            transform: scale(0.8);
+        }
+
+        .test .scale2 p{
+            transform: scale(1.2);
+        }
+
+        .test .skew p{
+            transform: skew(-5deg);
+        }
+
+        .test .skew2 p{
+            transform: skew(-5deg,-5deg);
+        }
+
+        .test .translate3d p{
+            transform: translate3d(0,-2px,20px);
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>矩阵变化:matrix</h1>
+<ul class="test">
+    <li class="matrix">
+        <p>transform:(0,1,1,1,10,10)</p>
+    </li>
+</ul>
+
+<h1>平移：translate</h1>
+<ul class="test">
+    <li class="translate">
+        <p>transform:translate(5%,10px)</p>
+    </li>
+    <li class="translate2">
+        <p>transform:translate(-10px,-10px)</p>
+    </li>
+    <li class="translateX">
+        <p>transform:translateX(20px)</p>
+    </li>
+    <li class="translate3">
+        <p>transform:translate(20px)</p>
+    </li>
+    <li class="translateY">
+        <p>transform:translateY(10px)</p>
+    </li>
+    <li class="translate4">
+        <p>transform:translate(0,10px)</p>
+    </li>
+</ul>
+<h1>旋转：rotate</h1>
+<ul class="test">
+    <li class="rotate">
+        <p>transform:rotate(-15deg)</p>
+    </li>
+    <li class="rotate2">
+        <p>transform:rotate(15deg)</p>
+    </li>
+</ul>
+<h1>缩放</h1>
+<ul class="test">
+    <li class="scale">
+        <p>transform:scale(.8)</p>
+    </li>
+    <li class="scale2">
+        <p>transform:scale(1.2)</p>
+    </li>
+</ul>
+<h1>倾斜</h1>
+<ul class="test">
+    <li class="skew">
+        <p>transform:skew(-5deg)</p>
+    </li>
+    <li class="skew2">
+        <p>transform:skew(-5deg,-5deg)</p>
+    </li>
+</ul>
+
+<ul class="test">
+    <li class="translate3d">
+        <p>transform:translate3D(0,-2px,0)</p>
+    </li>
+</ul>
+
+
+</body>
+</html>

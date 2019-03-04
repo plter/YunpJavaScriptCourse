@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background: red;
+            animation: anim 5000ms ease 1000ms 2;
+        }
+
+        /*
+            过渡和动画的区别
+                过渡不可控
+                动画可控
+        */
+
+        /*
+            @keyframes
+        */
+
+        @keyframes anim {
+            /*from{*/
+                /*width: 100px;*/
+                /*height: 100px;*/
+                /*transform: rotate(0deg);*/
+            /*}*/
+            /*to{*/
+                /*width: 200px;*/
+                /*height: 200px;*/
+                /*transform: rotate(360deg);*/
+            /*}*/
+
+            0%{
+                background: red;
+            }
+            25%{
+                background: blue;
+            }
+            50%{
+                background: yellow;
+            }
+            75%{
+                background: blue;
+            }
+            100%{
+                background: red;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="box">
+
+</div>
+
+</body>
+</html>

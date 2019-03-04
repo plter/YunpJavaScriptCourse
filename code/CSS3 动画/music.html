@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .demo-music .jump{
+            width: 80px;
+            height: 50px;
+            position: absolute;
+            top:12px;
+            left: 12px;
+        }
+
+        .demo-music .jump li{
+            position: relative;
+            float: left;
+            height: 100%;
+            width: 12%;
+            overflow: hidden;
+            margin-right: 1px;
+        }
+
+        .demo-music .jump li span{
+            position: absolute;
+            bottom: 0;
+            display: block;
+            height: 100%;
+            width: 100px;
+            background: radial-gradient(transparent 50%,rgba(255,162,162,0.8));
+        }
+
+        @keyframes jump {
+            10%{
+                height: 20%;
+            }
+            20%{
+                height: 60%;
+            }
+            40%{
+                height: 40%;
+            }
+            50%{
+                height: 100%;
+            }
+            100%{
+                height: 50%;
+            }
+        }
+
+        @-webkit-keyframes jump {
+            10%{
+                height: 20%;
+            }
+            20%{
+                height: 60%;
+            }
+            40%{
+                height: 40%;
+            }
+            50%{
+                height: 100%;
+            }
+            100%{
+                height: 50%;
+            }
+        }
+
+        .demo-music .jump .li1 span{
+            animation: jump 0.6s linear 0s infinite;
+            -webkit-animation: jump 0.6s linear 0s infinite;
+        }
+        .demo-music .jump .li2 span{
+            animation: jump 0.9s linear 0.3s infinite;
+            -webkit-animation: jump 0.9s linear 0.3s infinite;
+        }
+        .demo-music .jump .li3 span{
+            animation: jump 0.5s linear 0s infinite;
+            -webkit-animation: jump 0.5s linear 0s infinite;
+        }
+        .demo-music .jump .li4 span{
+            animation: jump 1s linear 0.6s infinite;
+            -webkit-animation: jump 1s linear 0.6s infinite;
+        }
+        .demo-music .jump .li5 span{
+            animation: jump 1.2s linear 0s infinite;
+            -webkit-animation: jump 1.2s linear 0s infinite;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+<div class="demo-music">
+    <div class="music">
+        <ul class="jump">
+            <li class="li1"><span class="ani-li"></span></li>
+            <li class="li2"><span class="ani-li"></span></li>
+            <li class="li3"><span class="ani-li"></span></li>
+            <li class="li4"><span class="ani-li"></span></li>
+            <li class="li5"><span class="ani-li"></span></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

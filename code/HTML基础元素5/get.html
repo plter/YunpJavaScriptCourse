@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+    1.安装一个集成开发环境
+        XAMPP
+        测试安装环境:localhost
+        启动：服务器（server）
+        需要知道安装的路径：
+            htdocs
+    2.编写服务器文件
+        <?php
+        $username = $_GET['username'];
+        echo $username;
+    3.测试服务器文件
+        http://localhost/test.php?username=hello
+
+    4.action:url地址
+    5.method:get、post
+        get与post的区别：
+
+-->
+
+<form action="http://localhost/test.php" method="get">
+
+    <input type="text" name="username">
+    <input type="submit">
+    
+</form>
+
+</body>
+</html>

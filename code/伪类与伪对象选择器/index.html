@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        a:link{
+            color: #222;
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            color: red;
+        }
+        a:active{
+            color: yellow;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+
+        .box:hover{
+            background-color: blue;
+        }
+
+        p:nth-child(3){
+            color: red;
+        }
+
+        p:last-child{
+            color: blue;
+        }
+
+        p:first-child{
+            color: blue;
+        }
+
+        .ptest{
+            padding-left: 5px;
+        }
+
+        .ptest:before{
+            content: "";
+            color: red;
+            border-left: 5px solid red;
+            padding-left: 5px;
+        }
+
+        .ptest:after{
+            content: "我是后面的内容";
+            color: red;
+            border-left: 5px solid red;
+            padding-left: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<a href="http://www.yunp.top">顶级云加</a>
+
+<div class="box">
+    hah
+</div>
+
+<div>
+    <p>p1标签</p>
+    <p>p2标签</p>
+    <p>p3标签</p>
+    <p>p4标签</p>
+    <p>p5标签</p>
+    <p>p6标签</p>
+</div>
+
+<div>
+    <p class="ptest">新闻内容</p>
+</div>
+
+<audio src="https://m.douban.com/music/subject/4034832/">播放</audio>
+
+</body>
+</html>

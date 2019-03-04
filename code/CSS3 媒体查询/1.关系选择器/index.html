@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .box p{
+            color: red;
+        }
+
+        .box1>p{
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--
+    1.包含选择器  E F
+    2.子选择器    E>F
+    3.
+
+
+    注意：p，a标签是不能自己嵌套自己的
+-->
+
+<div class="box">
+    <p>
+        我是第一个p标签
+        <div>
+            <p>我是第二个p标签</p>
+        </div>
+    </p>
+
+</div>
+
+
+<div class="box1">
+    <p>
+        我是第一个p标签
+        <div>
+            <p>我是第二个p标签</p>
+        </div>
+    </p>
+
+</div>
+
+
+</body>
+</html>

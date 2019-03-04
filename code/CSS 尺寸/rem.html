@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>Title</title>
+    <script type="text/javascript">
+        /*
+        *
+        * 在移动端根的大小是：font-size:50px
+        * 在PC端根的大小是：font-size:100px
+        *
+        * 注意：他会根据屏幕大小的变化，动态调整
+        *
+        * */
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+
+    </script>
+    <style>
+
+        .box{
+            width: 2rem;
+            height: 2rem;
+            background-color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="box">
+
+</div>
+
+</body>
+</html>

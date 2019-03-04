@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+    1.安装一个集成开发环境
+        XAMPP
+        测试安装环境:localhost
+        启动：服务器（server）
+        需要知道安装的路径：
+            htdocs
+    2.编写服务器文件
+        <?php
+        $username = $_GET['username'];
+        echo $username;
+    3.测试服务器文件
+        http://localhost/test.php?username=hello
+
+    4.action:url地址
+    5.method:get、post
+        get与post的区别：
+        get:
+            1.地址栏中可以看到参数
+            2.get请求的地址栏参数大小是有限制的
+            3.get不安全，可以直接看到
+            4.get有利于资源统一定位
+        post:
+            1.地址栏中看不到参数
+            2.post没有大小限制
+            3.post安全一些，地址栏中看不到
+        
+-->
+
+<form action="http://localhost/test.php" method="post">
+
+    <input type="text" name="username">
+    <input type="submit">
+    
+</form>
+
+</body>
+</html>

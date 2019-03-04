@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        /*p[title]{*/
+            /*color: red;*/
+        /*}*/
+
+        /*p[title='hello']{*/
+            /*color: red;*/
+        /*}*/
+
+        /*p[title~='hello']{*/
+            /*color: red;*/
+        /*}*/
+
+        /*p[title^='at']{*/
+            /*color: red;*/
+        /*}*/
+
+        /*p[title$='o']{*/
+            /*color: red;*/
+        /*}*/
+
+        p[title|='b']{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+<div>
+
+    <p title="a-hello">hello</p>
+    <p title="a-demo">demo</p>
+    <p title="b-attr1 hello">attr1</p>
+    <p title="c-attr2 world">attr2</p>
+
+</div>
+
+
+</body>
+</html>
